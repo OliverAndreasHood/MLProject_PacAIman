@@ -11,3 +11,5 @@ The model will be trained in four stages:
 - Moving in the presence of enemies without a buff
 - Moving in the presence of enemies with a buff
 - Optimization of the number of points scored and the time to finish the game 
+
+PacAIman base modeled on the A + Coding project https://github.com/a-plus-coding/pacman-with-python 
