@@ -13,3 +13,5 @@ The model will be trained in four stages:
 - Optimization of the number of points scored and the time to finish the game 
 
 PacAIman base modeled on the A + Coding project https://github.com/a-plus-coding/pacman-with-python 
+
+The behavior of the enemies will be based on the original PacMan game.
