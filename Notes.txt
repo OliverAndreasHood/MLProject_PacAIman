@@ -1,0 +1,14 @@
+Pacman in Python
+https://www.youtube.com/watch?v=Nc63LFyd4Og&list=PLryDJVmh-ww3AMl8NSjp9YygWWTOfePu7
+
+Pac-Man Ghost AI Explained
+https://www.youtube.com/watch?v=ataGotQ7ir8
+
+Pac-Man Reinforcement Learning
+https://github.com/gauthamvasan/Pacman-Reinforcement-Learning
+
+Marc shows how you can use deep Q Learning to play Pacman
+https://www.youtube.com/watch?v=84w8LRhGqsg
+
+Automating Pac-man with Deep Q-learning: An Implementation in Tensorflow.
+https://towardsdatascience.com/automating-pac-man-with-deep-q-learning-an-implementation-in-tensorflow-ca08e9891d9c
