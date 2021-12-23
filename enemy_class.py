@@ -8,13 +8,17 @@ vec = pygame.math.Vector2
 class Enemy:
     def __init__(self, app, pos, number):
         self.app = app
+        
+        #Position
         self.grid_pos = pos
         self.starting_pos = [pos.x, pos.y]
         self.pix_pos = self.get_pix_pos()
+        #Drawing
         self.radius = int(self.app.cell_width//2.3)
         self.number = number
         self.colour = self.set_colour()
         self.direction = vec(0, 0)
+        #Behavior
         self.personality = self.set_personality()
         self.target = None
         self.speed = self.set_speed()
@@ -28,14 +32,11 @@ class Enemy:
                 self.move()
 
         # Setting grid position in reference to pix position
-        self.grid_pos[0] = (self.pix_pos[0]-T_B_BUFFER +
-                            self.app.cell_width//2)//self.app.cell_width+1
-        self.grid_pos[1] = (self.pix_pos[1]-T_B_BUFFER +
-                            self.app.cell_height//2)//self.app.cell_height+1
+        self.grid_pos[0] = (self.pix_pos[0] - T_B_BUFFER + self.app.cell_width // 2) // self.app.cell_width + 1
+        self.grid_pos[1] = (self.pix_pos[1] - T_B_BUFFER + self.app.cell_height // 2) // self.app.cell_height + 1
 
     def draw(self):
-        pygame.draw.circle(self.app.screen, self.colour,
-                           (int(self.pix_pos.x), int(self.pix_pos.y)), self.radius)
+        pygame.draw.circle(self.app.screen, self.colour, (int(self.pix_pos.x), int(self.pix_pos.y)), self.radius)
 
     def set_speed(self):
         if self.personality in ['speedy','scared']:

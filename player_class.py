@@ -5,12 +5,15 @@ vec = pygame.math.Vector2
 class Player:
     def __init__(self, app, pos):
         self.app = app
-        # Stats
+        #Position
         self.grid_pos = vec(pos[0], pos[1])
         self.pix_pos = self.get_pix_pos()
+        
+        # Stats
         self.score = 0
         self.speed = 2
         self.lives = 3
+        self.state = 'standard'
 
         # Movement        
         self.direction = vec(1,0) 
@@ -19,7 +22,7 @@ class Player:
 
     def update(self):
         if self.able_to_move:
-            self.pix_pos += self.direction*self.speed
+            self.pix_pos += self.direction * self.speed
         
         if self.time_to_move(): 
             if self.stored_direction != None:
@@ -87,3 +90,4 @@ class Player:
     def eat_coin(self):
         self.app.coins.remove(self.grid_pos)
         self.score += 1
+
