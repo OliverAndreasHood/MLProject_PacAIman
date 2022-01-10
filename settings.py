@@ -18,6 +18,8 @@ GOLD = (212,175,55)
 GRAY = (107,107,107)
 CYAN = (0,255,255)
 VIOLET = (127,0,255)
+ORANGE = (227, 185, 89)
+PINK = (252, 164, 226)
 
 
 # font settings
@@ -29,4 +31,4 @@ START_FONT = 'arcade normal'
 PLAYER_COLOR = YELLOW
 
 # mob settings
-E_COLORS = [RED, GREEN, CYAN, VIOLET]
+E_COLORS = [RED, PINK, CYAN, ORANGE]
