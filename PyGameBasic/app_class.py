@@ -108,7 +108,7 @@ class App:
     def start_draw(self):
         self.screen.fill(BLACK)
         self.draw_text('PAC MAN', self.screen, [WIDTH//2, HEIGHT//2-150], 80, YELLOW, 'pacfont', True)
-        self.draw_text('PUSH SPACE BAR TO PLAY', self.screen, [WIDTH//2,HEIGHT//2], START_TEXT_SIZE, (170,132,58), START_FONT, True)
+        self.draw_text('PUSH SPACE BAR TO PLAY', self.screen, [WIDTH//2,HEIGHT//2], START_TEXT_SIZE+2, (170,132,58), START_FONT, True)
         self.draw_text('1 PLAYER ONLY', self.screen, [WIDTH//2,HEIGHT//2+50], START_TEXT_SIZE, (44, 167, 198), START_FONT, True)
         
         # UPPER HUD
@@ -132,6 +132,8 @@ class App:
                     self.player.move(vec(0,-1))
                 if event.key == pygame.K_DOWN:
                     self.player.move(vec(0,1))
+                if event.key == pygame.K_k: #debug key
+                    pass
 
     def playing_update(self):
         self.player.update()

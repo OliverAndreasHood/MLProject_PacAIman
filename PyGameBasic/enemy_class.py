@@ -61,9 +61,11 @@ class Enemy:
         if int(self.pix_pos.x+T_B_BUFFER//2) % self.app.cell_width == 0:
             if self.direction == vec(1, 0) or self.direction == vec(-1, 0) or self.direction == vec(0, 0) or self.direction == vec(0,0):
                 return True
+
         if int(self.pix_pos.y+T_B_BUFFER//2) % self.app.cell_height == 0:
             if self.direction == vec(0, 1) or self.direction == vec(0, -1) or self.direction == vec(0, 0) or self.direction == vec(0,0):
                 return True
+
         return False
 
     def move(self):
@@ -145,12 +147,21 @@ class Enemy:
     def set_colour(self):
         return E_COLORS[int(self.number)]
 
+    def chase_state(self):
+        #
+        pass
+
+    def scatter_state(self):
+        
+        pass
+
+
     def set_personality(self):
         if self.number == 0:
-            return "speedy"
+            return "Blinky"
         elif self.number == 1:
-            return "slow"
+            return "Pinky"
         elif self.number == 2:
-            return "random"
+            return "Inky"
         else:
-            return "scared"
+            return "Clyde"
