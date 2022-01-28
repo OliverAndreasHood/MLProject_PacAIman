@@ -30,26 +30,23 @@ Z użyciem biblioteki tensorflow i keras przygotowano agenta opartego o sieć DQ
 Optymalizacja hiperparametrów uczenia pozwoliła na wytrenowanie ponad 100'000 kroków w łącznej ilości 137 pełnych epizodów gry.  
 Wyniki trenowanego agenta w porówaniu do przypadkowych ruchów uzyskała wynik ponad dwukrotnie lepszy.( 250 : 590 )  
 
-### Parametry środowiska programistycznego  
- -----  
+### Parametry środowiska programistycznego   
 gym                 0.21.0  
 keras               2.6.0  
 numpy               1.21.2  
 rl                  NA  
 session_info        1.0.0  
 tensorflow          2.6.0  
- -----  
-Click to view modules imported as dependencies  
- -----  
+
 IPython             7.29.0  
 jupyter_client      7.1.0  
 jupyter_core        4.9.1  
 jupyterlab          3.2.1  
 notebook            6.4.6  
- -----  
+
 Python 3.9.7 (default, Sep 16 2021, 16:59:28) [MSC v.1916 64 bit (AMD64)]  
 Windows-10-10.0.19044-SP0  
- -----  
+
 Session information updated at 2022-01-26 22:11  
 
 ### Finalny udział w projekcie
