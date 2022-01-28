@@ -51,7 +51,7 @@ Session information updated at 2022-01-26 22:11
 
 ### Finalny udział w projekcie
 0. Wstępny Research, know - how: Krystian  
-1. Przygotowanie własnego środowiska gry PacMan - nieudane: Piotr  
+1. Przygotowanie własnego środowiska gry PacMan - porzucone: Piotr  
 2. Modele sieci, polityki uczenia: Piotr  
 3. Przygotowanie środowiska: Rafał  
 3. Model sposobu nauczania: Piotr  
